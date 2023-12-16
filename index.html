@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.svg">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,300,600,400,700&display=swap" rel="stylesheet">
+    <meta name="description" content="My portfolio website">
+    <meta name="keywords" content="Portfolio ,Frontend, CSS,html,JS,">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header container">
+        <nav>
+            <ul class="header-menu">
+                <li>
+                    <a class="header-link" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="header-link" href="#featured">Work</a>
+                </li>
+                <li>
+                    <a class="header-link" href="#contact">Contact</a>
+                </li>
+                <li class="header-line"></li>
+                <li>
+                    <button aria-label="theme-toogle btn" id="theme-toggle" class="header-sun">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <a class="header-resume btn" href="#">Resume</a>
+                </li>
+            </ul>
+            <button aria-label="mobile nav button" class="header-bars">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <nav>
+            <ul class="mobile-nav-menu">
+                <li>
+                    <a class="mobile-nav-link" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="mobile-nav-link" href="#featured">Work</a>
+                </li>
+                <li>
+                    <a class="mobile-nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="mobile-nav-link-line"></li>
+                <li>
+                    <button class="mobile-nav-sun" aria-label="theme-toogle btn" id="theme-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <a class="mobile-nav-btn btn" href="#">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+        <section class="hero container">
+            <img class="hero-img" src="/hero.JPG" alt="Profile picture">
+            <h2 class="hero-subtitle">Hi, I'm Ruslana 👋</h2>
+            <h1 class="hero-title">FRONT-END <br> WEB DEVELOPER.</h1>
+            <p class="hero-description">
+                A passionate <strong>Frontend / Fullstack-Jamstack</strong>
+                web developer and </strong>UI/UX</strong>
+                enthusiast specialized in building stunning
+                pixel-perfect interactive websites/applications.
+            </p>
+            <a class="hero-btn btn" href="#">Reach out</a>
+        </section>
+        <section id="about" class="about container section">
+            <div class="about-content">
+                <h2 class="about-title">About</h2>
+                <p class="about-description">
+                    Hello there! I'm Ruslana, a <strong>Frontend /
+                        Fullstack-Jamstack </strong> web developer based
+                    near Montreal. I wake up in the morning, grab a
+                    cup of timmies coffee, open up my laptop and
+                    build things that live on the web all day, everyday.
+                </p>
+                <p class="about-description">
+                    People who know me say I'm obsessed, that's fair,
+                    I am very driven and love learning new things.
+                </p>
+                <p class="about-description">
+                    I recently created a YouTube channel called
+                    <a>Slaying The Dragon</a> where I upload videos on
+                    front-end web development topics.
+                </p>
+                <hr class="about-hr" />
+                <h3 class="about-subtitle">Technologies</h3>
+                <div class="about-ul-container">
+                    <ul class="about-ul">
+                        <li class="about-list">JavaScript (ES6+)</li>
+                        <li class="about-list">CSS</li>
+                        <li class="about-list">HTML</li>
+                    </ul>
+                    <ul class="about-ul">
+                        <li class="about-list">ReactJS</li>
+                        <li class="about-list">NextJS</li>
+                        <li class="about-list">TailwindCSS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-img-wrapper">
+                <img class="about-img lazy loading" src="https://fakeimg.pl/3024x3466" data-src="/about.JPG" alt="Profile picture">
+            </div>
+        </section>
+        <section id="featured" class="featured container section">
+            <h3 class="featured-subtitle">Featured project</h3>
+            <div class="featured-wrapper">
+                <h2 class="featured-title">Formula</h2>
+                <a class="featured-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                    </svg>
+
+                </a>
+            </div>
+            <p class="featured-description">
+                Cillum voluptate tempor cillum culpa cupidatat labore
+                voluptate ullamco voluptate culpa sunt nulla non. Ad
+                cupidatat dolore quis amet pariatur consectetur ullamco.
+                Officia quis id velit duis cupidatat sunt deserunt do
+                aliquip nulla laboris.
+            </p>
+            <div class="feature-info-container">
+                <div>
+                    <h3 class="featured-label">Tech stack</h3>
+                    <ul class="featured-tech-stack">
+                        <li class="featured-info">TailwindCSS</li>
+                        <li class="featured-info">ReactJS</li>
+                        <li class="featured-info">React-hook-form</li>
+                        <li class="featured-info">NextJS</li>
+                        <li class="featured-info">Axios</li>
+                        <li class="featured-info">Supabase</li>
+                        <li class="featured-info">Stripe</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="featured-label">Project type</h3>
+                    <p class="featured-info">Fullstack-Jamstack</p>
+                </div>
+                <div>
+                    <h3 class="featured-label">Timeline</h3>
+                    <p class="featured-info">December 2022 - present</p>
+                </div>
+            </div>
+            <div class="featured-img-container">
+                <div class="featured-img-wrapper">
+                    <img class="lazy loading"  src="https://fakeimg.pl/1597x865" data-src="/heroformula.png" alt="Formula hero">
+                </div>
+                <div class="featured-img-wrapper">
+                    <img class="lazy loading"  src="https://fakeimg.pl/1601x873" data-src="/experience.png" alt="Formula experience">
+                </div>
+                <div class="featured-img-wrapper">
+                    <img class="lazy loading"  src="https://fakeimg.pl/1601x872" data-src="/features.png" alt="Formula features">
+                </div>
+                <div class="featured-img-wrapper">
+                    <img class="lazy loading" src="https://fakeimg.pl/1597x875" data-src="/contact.png" alt="Formula contact">
+                </div>
+            </div>
+        </section>
+        <section class="work container section">
+            <h2 class="work-title">Projects</h2>
+            <p class="work-description">
+                Mollit pariatur tempor nisi dolor
+                non consequat magna cupidatat reprehenderit. Aliquip
+                excepteur ullamco aliquip magna est et commodo deserunt
+                ipsum.
+            </p>
+            <div class="work-container">
+                <!-- Project 1 -->
+                <h3 class="work-project-title">R.A.</h3>
+                <div class="work-img-wrapper work-image1">
+                    <img class="lazy loading"  src="https://fakeimg.pl/1800x1626" data-src="/grid-project2.png" alt="R.A. website">
+                </div>
+                <div class="work-project work-content1">
+                    <h3 class="work-project-subtitle">R.A.</h3> 
+                    <p class="work-project-description1">
+                        Labore magna ut non labore Lorem nisi culpa sint et quis
+                        sint. Enim pariatur deserunt do ad exercitation. 
+                    </p>
+                    <p class="work-project-description2">
+                        Ea ut non cupidatat consequat sint elit ipsum culpa dolor
+                        cillum commodo. Do esse excepteur cillum deserunt duis
+                        incididunt. Eu tempor ullamco aliqua consectetur 
+                        incididunt anim dolor sunt laboris adipisicing 
+                        cupidatat sint. 
+                    </p>
+                    <a class="btn work-project-btn" href="#">Website</a>
+                </div>
+                <!-- Project 2 -->
+                <h3 class="work-project-title">Portfolio</h3>
+                <div class="work-img-wrapper work-image2">
+                    <img class="lazy loading"  src="https://fakeimg.pl/1800x1626" data-src="/portfolio.png" alt="Portfolio website">
+                </div>
+                <div class="work-project work-content2">
+                    <h3 class="work-project-subtitle">Portfolio</h3> 
+                    <p class="work-project-description1">
+                        Sunt sint labore officia irure. Dolore pariatur nisi 
+                        deserunt sunt exercitation excepteur do reprehenderit 
+                        fugiat Lorem sint ut.  
+                    </p>
+                    <p class="work-project-description2">
+                        Mollit ipsum mollit magna occaecat eiusmod sint fugiat 
+                        est non adipisicing esse fugiat deserunt minim. Enim 
+                        occaecat velit eu non amet nostrud officia duis.  
+                    </p>
+                    <a class="btn work-project-btn" href="#">Website</a>
+                </div>
+                <!-- Project 3 -->
+                <h3 class="work-project-title">Login Form</h3>
+                <div class="work-img-wrapper work-image3">
+                    <img class="lazy loading" src="https://fakeimg.pl/1800x1626" data-src="/form-project.png" alt="Login Form website">
+                </div>
+                <div class="work-project work-content3">
+                    <h3 class="work-project-subtitle">Login Form</h3> 
+                    <p class="work-project-description1">
+                        Aliquip eu ad est reprehenderit veniam irure 
+                        exercitation in velit enim ipsum.  
+                    </p>
+                    <p class="work-project-description2">
+                        Elit est amet quis incididunt officia velit 
+                        eiusmod do amet. Sint non qui nulla sit ex cillum 
+                        non pariatur velit proident ut aliqua fugiat 
+                        incididunt id minim.   
+                    </p>
+                    <a class="btn work-project-btn" href="#">Website</a>
+                </div>
+                <!-- Project 4 -->
+                <h3 class="work-project-title">Flexbox Project</h3>
+                <div class="work-img-wrapper work-image4">
+                    <img class="lazy loading" src="https://fakeimg.pl/1800x1626" data-src="/flexbox-project.png" alt="Flexbox Project website">
+                </div>
+                <div class="work-project work-content4">
+                    <h3 class="work-project-subtitle">Flexbox Project</h3> 
+                    <p class="work-project-description1">
+                        Labore magna ut non labore Lorem nisi culpa sint et quis
+                        sint. Enim pariatur deserunt do ad exercitation. 
+                    </p>
+                    <p class="work-project-description2">
+                        Ea ut non cupidatat consequat sint elit ipsum culpa dolor
+                        cillum commodo. Do esse excepteur cillum deserunt duis
+                        incididunt. Eu tempor ullamco aliqua consectetur 
+                        incididunt anim dolor sunt laboris adipisicing 
+                        cupidatat sint. 
+                    </p>
+                    <a class="btn work-project-btn" href="#">Website</a>
+                </div>
+                <!-- Project 5 -->
+                <h3 class="work-project-title">John</h3>
+                <div class="work-img-wrapper work-image5">
+                    <img class="lazy loading" src="https://fakeimg.pl/1800x1626" data-src="/John.png" alt="John website">
+                </div>
+                <div class="work-project work-content5">
+                    <h3 class="work-project-subtitle">John</h3> 
+                    <p class="work-project-description1">
+                        Sunt sint labore officia irure. Dolore pariatur nisi 
+                        deserunt sunt exercitation excepteur do reprehenderit 
+                        fugiat Lorem sint ut.  
+                    </p>
+                    <p class="work-project-description2">
+                        Mollit ipsum mollit magna occaecat eiusmod sint fugiat 
+                        est non adipisicing esse fugiat deserunt minim. Enim 
+                        occaecat velit eu non amet nostrud officia duis.  
+                    </p>
+                    <a class="btn work-project-btn" href="#">Website</a>
+                </div>
+                <!-- Project 6 -->
+                <h3 class="work-project-title">Old Portfolio</h3>
+                <div class="work-img-wrapper work-image6">
+                    <img class="lazy loading" src="https://fakeimg.pl/1800x1626" data-src="/form-project.png" alt="Old Portfolio website">
+                </div>
+                <div class="work-project work-content6">
+                    <h3 class="work-project-subtitle">Old Portfolio</h3> 
+                    <p class="work-project-description1">
+                        Aliquip eu ad est reprehenderit veniam irure 
+                        exercitation in velit enim ipsum.  
+                    </p>
+                    <p class="work-project-description2">
+                        Elit est amet quis incididunt officia velit 
+                        eiusmod do amet. Sint non qui nulla sit ex cillum 
+                        non pariatur velit proident ut aliqua fugiat 
+                        incididunt id minim.   
+                    </p>
+                    <a class="btn work-project-btn" href="#">Website</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact container section">
+            <h2 class="contact-title">Get In Contact</h2>
+            <p class="contact-description">
+                Whether you are starting a 
+                project, have business inquiries or just want to say hi, 
+                my inbox is always open so feel free to reach out and I 
+                will get back to you as soon as possible. 
+            </p>
+            <a class="contact-btn btn" 
+            href="mailto:avramova.slay@gmail.com"
+            target="_blank">React Out</a>
+        </section>
+        <footer class="footer container section">
+            <h3 class="footer-title">~ Ruslana Avramova ~</h3>
+        </footer>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
